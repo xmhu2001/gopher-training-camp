@@ -50,7 +50,6 @@ func (safeMap *SafeChannelMap[K, V]) Run() {
 		case lenMap:
 			req.Succeed = true
 			req.Result <- len(safeMap.m)
-
 		}
 	}
 }
